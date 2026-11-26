@@ -1,0 +1,341 @@
+/* ===== Typography ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #123F32;
+  background-color: #FFF4DF;
+}
+h1, h2, h3, .font-heading {
+  font-family: 'Fredoka', sans-serif;
+}
+.font-editorial {
+  font-family: 'DM Serif Display', serif;
+}
+
+/* ===== Animations & Effects ===== */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marqueeScroll 24s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Floating elements animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(6deg); }
+}
+@keyframes floatMedium {
+  0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+  50% { transform: translateY(-18px) rotate(-8deg) scale(1.06); }
+}
+@keyframes floatSparkle {
+  0%, 100% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
+  50% { transform: scale(1.25) rotate(180deg); opacity: 1; }
+}
+@keyframes cartBump {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.35) rotate(-6deg); }
+  60% { transform: scale(0.9) rotate(4deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+.animate-float-medium {
+  animation: floatMedium 4s ease-in-out infinite;
+}
+.animate-float-sparkle {
+  animation: floatSparkle 3s ease-in-out infinite;
+}
+.cart-bump {
+  animation: cartBump 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Confetti Particle Canvas/Container */
+.sparkle-burst {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Product Card Interactive Elevation */
+.menu-card {
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.menu-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 35px -8px rgba(18, 63, 50, 0.15), 0 0 0 2px rgba(245, 169, 197, 0.5);
+}
+.menu-card img {
+  transition: transform 0.55s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.menu-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF4DF;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8D7B8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5A9C5;
+}
+
+/* ===== Perpindahan Halaman ===== */
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+.page:not([hidden]) { animation: pageIn .35s ease both; }
+@media (prefers-reduced-motion: reduce) {
+  .page:not([hidden]) { animation: none; }
+}
+
+/* ===== Info Bar Atas (pesan bergantian) ===== */
+.ann-bar {
+  --h: 2.5rem;
+  position: relative;
+  height: var(--h);
+  overflow: hidden;
+  background: #123F32;
+  color: #FFF4DF;
+  font-size: .8rem;
+  letter-spacing: .02em;
+}
+.ann-bar::after {            /* kilau tipis yang lewat */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 35%, rgba(245,169,197,.22) 50%, transparent 65%);
+  transform: translateX(-100%);
+  animation: annShine 7s ease-in-out infinite;
+  pointer-events: none;
+}
+.ann-track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  animation: annSlide 14s cubic-bezier(.65, 0, .35, 1) infinite;
+}
+.ann-bar:hover .ann-track,
+.ann-bar:focus-within .ann-track { animation-play-state: paused; }
+.ann-item {
+  height: var(--h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  padding: 0 1rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.ann-item em {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.05em;
+  color: #F5A9C5;
+}
+.ann-item a { text-decoration: none; }
+.ann-item a:hover em { text-decoration: underline; text-underline-offset: 3px; }
+.ann-dot {
+  width: .42rem;
+  height: .42rem;
+  border-radius: 50%;
+  background: #F5A9C5;
+  box-shadow: 0 0 0 0 rgba(245,169,197,.6);
+  animation: annPulse 2.2s ease-out infinite;
+  flex: none;
+}
+.ann-dot:last-child { background: #D4AF37; animation-delay: 1.1s; }
+@keyframes annSlide {
+  0%, 20%   { transform: translateY(0); }
+  25%, 45%  { transform: translateY(calc(var(--h) * -1)); }
+  50%, 70%  { transform: translateY(calc(var(--h) * -2)); }
+  75%, 95%  { transform: translateY(calc(var(--h) * -3)); }
+  100%      { transform: translateY(calc(var(--h) * -4)); }
+}
+@keyframes annShine { 0%, 55% { transform: translateX(-100%); } 85%, 100% { transform: translateX(100%); } }
+@keyframes annPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(245,169,197,.55); }
+  70%  { box-shadow: 0 0 0 .5rem rgba(245,169,197,0); }
+  100% { box-shadow: 0 0 0 0 rgba(245,169,197,0); }
+}
+@media (max-width: 480px) { .ann-item { font-size: .72rem; gap: .5rem; } .ann-dot:last-child { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .ann-track, .ann-bar::after, .ann-dot { animation: none; }
+}
+
+/* ===== Tampilan HP (<= 767px): beda dari laptop ===== */
+html,body{overflow-x:clip}
+
+/* ===== HP + Tablet (<= 1023px): menu hamburger di atas ===== */
+.m-menu{display:none}
+@media (max-width:1023px){
+  [data-purpose="sticky-navbar"]{position:sticky}
+  .m-menu{position:absolute;left:0;right:0;top:100%;z-index:60;display:grid;gap:.25rem;padding:.6rem 1rem 1rem;
+    background:#fff;border-bottom:1px solid #E8D7B8;
+    box-shadow:0 18px 30px -12px rgba(18,63,50,.22);
+    visibility:hidden;opacity:0;transform:translateY(-8px);pointer-events:none;
+    transition:opacity .2s ease,transform .2s ease,visibility 0s linear .2s}
+  .m-menu.is-open{visibility:visible;opacity:1;transform:none;pointer-events:auto;transition:opacity .2s ease,transform .2s ease}
+  .m-menu a{display:flex;align-items:center;gap:.85rem;padding:.85rem 1rem;border-radius:1rem;
+    font-size:1rem;font-weight:600;color:#123F32;text-decoration:none;transition:background .15s}
+  .m-menu a i{width:1.4rem;text-align:center;color:rgba(18,63,50,.55)}
+  .m-menu a:hover{background:#FFF4DF}
+  .m-menu a.is-active{background:#F8DDE8}
+  .m-menu a.is-active i{color:#123F32}
+}
+@media (min-width:768px) and (max-width:1023px){
+  .m-menu{left:auto;right:1.5rem;width:20rem;top:calc(100% + .25rem);border:1px solid #E8D7B8;border-radius:1.5rem}
+}
+/* Ikon garis tiga -> X */
+#menuToggleBtn .menu-ico path{transform-box:fill-box;transform-origin:center;transition:transform .25s,opacity .2s}
+#menuToggleBtn[aria-expanded="true"] .l1{transform:translateY(5px) rotate(45deg)}
+#menuToggleBtn[aria-expanded="true"] .l2{opacity:0}
+#menuToggleBtn[aria-expanded="true"] .l3{transform:translateY(-5px) rotate(-45deg)}
+
+/* ===== HP (<= 767px) ===== */
+@media (max-width:767px){
+  .ann-bar{--h:2rem}
+  /* Header ringkas */
+  [data-purpose="sticky-navbar"]{box-shadow:0 2px 12px rgba(18,63,50,.06)}
+  [data-purpose="sticky-navbar"] [class*="w-12"][class*="h-12"]{width:2.4rem;height:2.4rem;font-size:1.3rem}
+  [data-purpose="sticky-navbar"] .font-heading{font-size:1.05rem}
+  [data-purpose="sticky-navbar"] .tracking-widest{font-size:.55rem;letter-spacing:.12em}
+  /* Jarak antar-bagian lebih rapat */
+  main section, .page > section{padding-top:2.25rem!important;padding-bottom:2.25rem!important}
+  .page h1{font-size:2.1rem!important;line-height:1.1!important}
+  .page h2{font-size:1.6rem!important;line-height:1.2!important}
+  /* Katalog: 2 kolom kartu ringkas */
+  #productGridContainer{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:.7rem!important}
+  #productGridContainer .menu-card{border-radius:1.1rem}
+  #productGridContainer .menu-card>div:first-child{height:7.5rem!important}
+  #productGridContainer .menu-card>div:first-child span{font-size:.55rem!important;padding:.15rem .45rem!important}
+  #productGridContainer .menu-card>div:first-child span:last-child{display:none}
+  #productGridContainer .menu-card>div:last-child{padding:.65rem!important}
+  #productGridContainer .menu-card h3{font-size:.8rem;line-height:1.25}
+  #productGridContainer .menu-card p{display:none}
+  #productGridContainer .menu-card .pt-4{padding-top:.5rem!important;margin-top:.4rem!important;flex-wrap:wrap;gap:.4rem}
+  #productGridContainer .menu-card .pt-4>div:first-child span:first-child{display:none}
+  #productGridContainer .menu-card .pt-4 .font-heading{font-size:.9rem}
+  #productGridContainer .menu-card .pt-4>div:last-child{width:100%;gap:.35rem}
+  #productGridContainer .menu-card .add-to-cart-trigger{flex:1;justify-content:center;padding:.5rem .3rem;font-size:.68rem}
+  #productGridContainer .menu-card [data-quickview]{width:2rem;height:2rem}
+  /* Pencarian & filter tidak meluber */
+  #catalogSearch,input[type="search"],input[type="text"],select,textarea{max-width:100%;font-size:16px}
+  .page input,.page select,.page textarea{min-width:0}
+  /* Keranjang jadi lembar dari bawah */
+  #cartDrawer,[data-purpose="cart-drawer"]{max-width:100%!important}
+}
+#hgStepBuild[hidden],#hgStepSummary[hidden]{display:none!important}
+
+/* ===================================================================
+   LAPISAN RESPONSIVE (HP · Tablet · Laptop · Layar lebar)
+   =================================================================== */
+img{max-width:100%}
+#cartBackdrop{z-index:48!important}
+
+/* Hero: foto banner lebar (teks sudah ada di gambar) — fokuskan ke kue,
+   bukan ke tengah, supaya tidak terpotong aneh di layar sempit. */
+[data-purpose="hero-banner"] img[src*="hero-"]{object-position:25% center}
+
+/* Perangkat sentuh: tanpa efek hover yang "menempel" */
+@media (hover:none){
+  .menu-card:hover{transform:none;box-shadow:none}
+  .menu-card:hover img{transform:none}
+  [data-purpose="hero-banner"] .group:hover img{transform:none!important}
+}
+/* Area sentuh minimal ±44px untuk tombol kecil (qty, bintang, kategori) */
+@media (pointer:coarse){
+  .item-qty{min-width:1.25rem;text-align:center}
+  #cartItemList button,#hgItems button{min-width:2.25rem;min-height:2.25rem}
+  #rvStars button,#cartItemList+* button{min-height:2.5rem}
+  [data-category-btn],#hgCats button,#hgEvents button{min-height:2.5rem}
+}
+
+/* Kategori & chip: geser horizontal rapi tanpa scrollbar jelek */
+[data-category-btn]{flex:none}
+#hgCats,#hgEvents{scrollbar-width:none}
+#hgCats::-webkit-scrollbar,#hgEvents::-webkit-scrollbar{display:none}
+
+/* Teks panjang tidak boleh melebarkan kartu */
+.menu-card h3,.menu-card p,#rvList p{overflow-wrap:anywhere}
+
+/* ---- HP kecil (<= 380px: iPhone SE, Android kecil) ---- */
+@media (max-width:380px){
+  .page h1{font-size:1.85rem!important}
+  .page h2{font-size:1.4rem!important}
+  [data-purpose="sticky-navbar"] .tracking-widest{display:none}
+  [data-purpose="sticky-navbar"]>div{padding-left:.75rem;padding-right:.75rem}
+  [data-purpose="hero-banner"] img[src*="hero-"]{height:15rem!important}
+  [data-purpose="hero-banner"] .animate-float-slow,
+  [data-purpose="hero-banner"] .animate-float-medium{transform-origin:left top}
+}
+
+/* ---- HP (<= 767px): kartu melayang di hero diperkecil ---- */
+@media (max-width:767px){
+  [data-purpose="hero-banner"] img[src*="hero-"]{height:19rem!important;object-position:29% center}
+  [data-purpose="hero-banner"] .top-7.left-7{top:1.1rem;left:1.1rem;padding:.4rem .65rem;border-radius:.9rem}
+  [data-purpose="hero-banner"] .bottom-7.right-7{bottom:1.1rem;right:1.1rem;padding:.45rem .65rem;border-radius:.9rem}
+  [data-purpose="hero-banner"] .bottom-7.right-7>div:first-child{display:none}
+  [data-purpose="hero-banner"] .top-7.left-7 p:first-child{display:none}
+}
+
+/* ---- HP landscape (layar pendek) ---- */
+@media (max-height:480px) and (orientation:landscape){
+  .m-menu{max-height:calc(100vh - 4.5rem);overflow-y:auto}
+  #cartDrawer{max-width:26rem!important}
+}
+
+/* ---- Tablet (768–1023px) ---- */
+@media (min-width:768px) and (max-width:1023px){
+  .page h1{font-size:3rem;line-height:1.1}
+  [data-purpose="hero-banner"] img[src*="hero-"]{height:24rem}
+  [data-purpose="hero-banner"] .relative.mx-auto.max-w-lg{max-width:36rem}
+  [data-purpose="sticky-navbar"] .font-heading{font-size:1.4rem}
+}
+
+/* ---- Laptop kecil (1024–1279px) ---- */
+@media (min-width:1024px) and (max-width:1279px){
+  [data-purpose="sticky-navbar"] a.group{flex:none}
+  [data-purpose="sticky-navbar"] .font-heading{white-space:nowrap}
+  [data-purpose="sticky-navbar"] .tracking-widest{display:none}
+  [data-purpose="sticky-navbar"]>div{padding-left:1rem;padding-right:1rem;gap:1rem}
+  [data-purpose="sticky-navbar"] nav{flex:1;justify-content:center;gap:1.1rem;font-size:.78rem;margin:0 .5rem}
+  [data-purpose="sticky-navbar"] nav>a{white-space:nowrap;margin:0!important}
+  [data-purpose="sticky-navbar"] #cartToggleBtn>span.hidden{display:none}
+  [data-purpose="sticky-navbar"] #cartToggleBtn{padding:.65rem .9rem}
+}
+
+/* ---- Layar lebar (>= 1536px, monitor / TV) ---- */
+@media (min-width:1536px){
+  html{font-size:17px}
+}
+@media (min-width:1920px){
+  html{font-size:18px}
+}
+
+/* Hormati pengaturan "kurangi gerakan" di semua perangkat */
+@media (prefers-reduced-motion:reduce){
+  .animate-marquee,.animate-float-slow,.animate-float-medium,.animate-float-sparkle{animation:none}
+}
+
+/* Kartu menu: baris harga + tombol boleh turun baris di kartu sempit */
+.menu-card .pt-4{flex-wrap:wrap;row-gap:.5rem;column-gap:.5rem}
+.menu-card .pt-4 .font-heading{white-space:nowrap}
+.menu-card .pt-4>div:last-child{flex:1 1 auto;justify-content:flex-end}

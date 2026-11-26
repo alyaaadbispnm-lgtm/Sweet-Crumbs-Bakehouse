@@ -1,0 +1,3 @@
+Taruh rekaman (format .mp3) di folder ini dengan nama file persis seperti di DAFTAR_KALIMAT.csv.
+Contoh: audio/klik-1.mp3 , audio/produk/pink-please-artisan-donut.mp3
+File yang belum ada akan dilewati: maskot tetap berfungsi, hanya tanpa suara bicara untuk kalimat itu.

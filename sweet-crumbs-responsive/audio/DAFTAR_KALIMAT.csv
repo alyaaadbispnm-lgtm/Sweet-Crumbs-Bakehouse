@@ -1,0 +1,81 @@
+﻿ID,Kapan muncul,Kalimat yang direkam,Nama file (simpan di folder audio/)
+klik-1,Maskot diklik,Halo! Mau donat apa hari ini?,klik-1.mp3
+klik-2,Maskot diklik,"Hari ini good mood, kan?",klik-2.mp3
+klik-3,Maskot diklik,Psst... yang pink itu favoritku!,klik-3.mp3
+klik-4,Maskot diklik,"Pecahin donat yang melayang, yuk!",klik-4.mp3
+klik-5,Maskot diklik,Perutku bunyi nih. Kamu juga?,klik-5.mp3
+klik-6,Maskot diklik,"Geli, hihi!",klik-6.mp3
+klik-7,Maskot diklik,"Aku donat, bukan bantal!",klik-7.mp3
+klik-8,Maskot diklik,"Coba intip menu kami, deh.",klik-8.mp3
+klik-9,Maskot diklik,Ada hampers lucu di Racik Hadiah!,klik-9.mp3
+klik-10,Maskot diklik,"Kamu baik banget, mau main sama aku.",klik-10.mp3
+klik-11,Maskot diklik,Satu donat sehari bikin hati senang.,klik-11.mp3
+klik-12,Maskot diklik,Yang manis-manis nunggu kamu nih.,klik-12.mp3
+klik-13,Maskot diklik,"Pssst, sprinkles-ku bukan buat dimakan ya!",klik-13.mp3
+klik-14,Maskot diklik,"Hehe, kamu nemuin aku!",klik-14.mp3
+tambah-1,Produk masuk keranjang (cadangan umum),"Wah, pilihanmu masuk keranjang!",tambah-1.mp3
+tambah-2,Produk masuk keranjang (cadangan umum),Yay! Sudah masuk keranjang!,tambah-2.mp3
+tambah-3,Produk masuk keranjang (cadangan umum),Siap! Sudah kutaruh di keranjangmu.,tambah-3.mp3
+tambah-lagi-1,Produk ditambah lagi ke keranjang,Nambah lagi? Aku suka gaya kamu!,tambah-lagi-1.mp3
+tambah-lagi-2,Produk ditambah lagi ke keranjang,"Wah, keranjangnya makin penuh!",tambah-lagi-2.mp3
+tambah-lagi-3,Produk ditambah lagi ke keranjang,"Satu lagi! Kamu nggak ragu-ragu, ya.",tambah-lagi-3.mp3
+keluar-1,Produk dikeluarkan dari keranjang,"Yah, dikeluarkan ya... nggak apa-apa!",keluar-1.mp3
+keluar-2,Produk dikeluarkan dari keranjang,"Oke, kubuang dari keranjang. Hiks.",keluar-2.mp3
+keluar-3,Produk dikeluarkan dari keranjang,Berubah pikiran? Boleh kok.,keluar-3.mp3
+gratis-ongkir,Gratis ongkir tercapai,Selamat! Kamu dapat gratis ongkir!,gratis-ongkir.mp3
+jangan-dilempar,Benda melayang dilempar-lempar,"Eh, jangan dilempar-lempar dong!",jangan-dilempar.mp3
+pecah-seru,Beberapa donat dipecahkan,"Wuhuu! Seru banget, ya!",pecah-seru.mp3
+ulasan-terima,Setelah kirim ulasan,Terima kasih sudah memberikan ulasan!,ulasan-terima.mp3
+pesanan-online,Pesanan berhasil (bayar online),"Pembayaran berhasil! Pesananmu sudah kami terima, tunggu kabar dari kami ya!",pesanan-online.mp3
+pesanan-tunai,Pesanan berhasil (COD / bayar di toko),Pesananmu sudah kami terima! Tunggu kabar dari kami ya!,pesanan-tunai.mp3
+keranjang-isi,Buka keranjang (ada isi),Ini keranjangmu. Siap checkout?,keranjang-isi.mp3
+keranjang-kosong,Buka keranjang (kosong),"Keranjangmu masih kosong. Yuk, pilih camilan dulu!",keranjang-kosong.mp3
+suara-nyala,Tombol suara dinyalakan,Suara maskot menyala!,suara-nyala.mp3
+sapa-pagi,Sapaan buka website (pagi),"Selamat pagi! Aku Crumby, ayo sarapan manis!",sapa-pagi.mp3
+sapa-siang,Sapaan buka website (siang),"Selamat siang! Aku Crumby, siap temani kamu.",sapa-siang.mp3
+sapa-sore,Sapaan buka website (sore),"Selamat sore! Waktunya teman ngopi, nih.",sapa-sore.mp3
+sapa-malam,Sapaan buka website (malam),"Selamat malam! Aku Crumby, mampir dulu ya.",sapa-malam.mp3
+halaman-menu,Pertama kali buka Katalog Menu,"Ini menu kami! Ada donat, pastry, cake, dan banyak lagi.",halaman-menu.mp3
+halaman-racik,Pertama kali buka Racik Hadiah,Mau bikin hampers sendiri? Pilih kotak dan isinya sesukamu!,halaman-racik.mp3
+halaman-ulasan,Pertama kali buka Rating & Ulasan,"Ini kata pelanggan kami. Kamu juga boleh kasih ulasan, lho!",halaman-ulasan.mp3
+halaman-kontak,Pertama kali buka Kontak,"Mampir ke gerai kami, ya! Kami tunggu di Madiun.",halaman-kontak.mp3
+produk/pink-please-artisan-donut,Produk ini masuk keranjang,"Wah, Pink, Please! Artisan Donut masuk keranjang!",produk/pink-please-artisan-donut.mp3
+produk/choco-loco-truffle,Produk ini masuk keranjang,"Wah, Choco Loco Truffle masuk keranjang!",produk/choco-loco-truffle.mp3
+produk/oh-pistachio-supreme,Produk ini masuk keranjang,"Wah, Oh, Pistachio Supreme! masuk keranjang!",produk/oh-pistachio-supreme.mp3
+produk/simply-vanilla-glazed,Produk ini masuk keranjang,"Wah, Simply Vanilla Glazed masuk keranjang!",produk/simply-vanilla-glazed.mp3
+produk/salted-caramel-crunch,Produk ini masuk keranjang,"Wah, Salted Caramel Crunch masuk keranjang!",produk/salted-caramel-crunch.mp3
+produk/blueberry-cheesecake-donut,Produk ini masuk keranjang,"Wah, Blueberry Cheesecake Donut masuk keranjang!",produk/blueberry-cheesecake-donut.mp3
+produk/matcha-green-tea-donut,Produk ini masuk keranjang,"Wah, Matcha Green Tea Donut masuk keranjang!",produk/matcha-green-tea-donut.mp3
+produk/the-box-of-six-artisan-donuts,Produk ini masuk keranjang,"Wah, The Box of Six Artisan Donuts masuk keranjang!",produk/the-box-of-six-artisan-donuts.mp3
+produk/belgian-dark-chocolate-fudge-cake,Produk ini masuk keranjang,"Wah, Belgian Dark Chocolate Fudge Cake masuk keranjang!",produk/belgian-dark-chocolate-fudge-cake.mp3
+produk/strawberry-chantilly-shortcake,Produk ini masuk keranjang,"Wah, Strawberry Chantilly Shortcake masuk keranjang!",produk/strawberry-chantilly-shortcake.mp3
+produk/red-velvet-cream-cheese-cake,Produk ini masuk keranjang,"Wah, Red Velvet Cream Cheese Cake masuk keranjang!",produk/red-velvet-cream-cheese-cake.mp3
+produk/new-york-baked-cheesecake,Produk ini masuk keranjang,"Wah, New York Baked Cheesecake masuk keranjang!",produk/new-york-baked-cheesecake.mp3
+produk/lemon-drizzle-cake,Produk ini masuk keranjang,"Wah, Lemon Drizzle Cake masuk keranjang!",produk/lemon-drizzle-cake.mp3
+produk/carrot-walnut-cake,Produk ini masuk keranjang,"Wah, Carrot Walnut Cake masuk keranjang!",produk/carrot-walnut-cake.mp3
+produk/black-forest-gateau,Produk ini masuk keranjang,"Wah, Black Forest Gateau masuk keranjang!",produk/black-forest-gateau.mp3
+produk/matcha-azuki-layer-cake,Produk ini masuk keranjang,"Wah, Matcha Azuki Layer Cake masuk keranjang!",produk/matcha-azuki-layer-cake.mp3
+produk/flaky-french-butter-croissant,Produk ini masuk keranjang,"Wah, Flaky French Butter Croissant masuk keranjang!",produk/flaky-french-butter-croissant.mp3
+produk/classic-pain-au-chocolat,Produk ini masuk keranjang,"Wah, Classic Pain au Chocolat masuk keranjang!",produk/classic-pain-au-chocolat.mp3
+produk/almond-croissant,Produk ini masuk keranjang,"Wah, Almond Croissant masuk keranjang!",produk/almond-croissant.mp3
+produk/cinnamon-roll-cream-cheese,Produk ini masuk keranjang,"Wah, Cinnamon Roll Cream Cheese masuk keranjang!",produk/cinnamon-roll-cream-cheese.mp3
+produk/rustic-country-sourdough,Produk ini masuk keranjang,"Wah, Rustic Country Sourdough masuk keranjang!",produk/rustic-country-sourdough.mp3
+produk/classic-french-baguette,Produk ini masuk keranjang,"Wah, Classic French Baguette masuk keranjang!",produk/classic-french-baguette.mp3
+produk/butter-brioche-buns,Produk ini masuk keranjang,"Wah, Butter Brioche Buns masuk keranjang!",produk/butter-brioche-buns.mp3
+produk/raspberry-cream-danish,Produk ini masuk keranjang,"Wah, Raspberry Cream Danish masuk keranjang!",produk/raspberry-cream-danish.mp3
+produk/brown-butter-choc-chip-cookie,Produk ini masuk keranjang,"Wah, Brown Butter Choc Chip Cookie masuk keranjang!",produk/brown-butter-choc-chip-cookie.mp3
+produk/double-chocolate-cookie,Produk ini masuk keranjang,"Wah, Double Chocolate Cookie masuk keranjang!",produk/double-chocolate-cookie.mp3
+produk/oatmeal-raisin-cookie,Produk ini masuk keranjang,"Wah, Oatmeal Raisin Cookie masuk keranjang!",produk/oatmeal-raisin-cookie.mp3
+produk/red-velvet-cookie,Produk ini masuk keranjang,"Wah, Red Velvet Cookie masuk keranjang!",produk/red-velvet-cookie.mp3
+produk/matcha-white-choc-cookie,Produk ini masuk keranjang,"Wah, Matcha White Choc Cookie masuk keranjang!",produk/matcha-white-choc-cookie.mp3
+produk/fudgy-walnut-brownie,Produk ini masuk keranjang,"Wah, Fudgy Walnut Brownie masuk keranjang!",produk/fudgy-walnut-brownie.mp3
+produk/salted-caramel-brownie,Produk ini masuk keranjang,"Wah, Salted Caramel Brownie masuk keranjang!",produk/salted-caramel-brownie.mp3
+produk/assorted-french-macarons,Produk ini masuk keranjang,"Wah, Assorted French Macarons masuk keranjang!",produk/assorted-french-macarons.mp3
+produk/classic-tiramisu-mascarpone,Produk ini masuk keranjang,"Wah, Classic Tiramisu Mascarpone masuk keranjang!",produk/classic-tiramisu-mascarpone.mp3
+produk/berry-pistachio-mille-crepe,Produk ini masuk keranjang,"Wah, Berry Pistachio Mille Crepe masuk keranjang!",produk/berry-pistachio-mille-crepe.mp3
+produk/matcha-mille-crepe,Produk ini masuk keranjang,"Wah, Matcha Mille Crepe masuk keranjang!",produk/matcha-mille-crepe.mp3
+produk/vanilla-panna-cotta,Produk ini masuk keranjang,"Wah, Vanilla Panna Cotta masuk keranjang!",produk/vanilla-panna-cotta.mp3
+produk/cr-me-br-l-e,Produk ini masuk keranjang,"Wah, Crème Brûlée masuk keranjang!",produk/cr-me-br-l-e.mp3
+produk/caramel-custard-pudding,Produk ini masuk keranjang,"Wah, Caramel Custard Pudding masuk keranjang!",produk/caramel-custard-pudding.mp3
+produk/chocolate-clair,Produk ini masuk keranjang,"Wah, Chocolate Éclair masuk keranjang!",produk/chocolate-clair.mp3
+produk/banana-cream-pudding-cup,Produk ini masuk keranjang,"Wah, Banana Cream Pudding Cup masuk keranjang!",produk/banana-cream-pudding-cup.mp3

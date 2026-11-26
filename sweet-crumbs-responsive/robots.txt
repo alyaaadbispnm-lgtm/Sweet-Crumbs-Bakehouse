@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Tambahkan baris Sitemap setelah website dipublikasikan dengan domain permanen.
